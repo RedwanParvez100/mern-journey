@@ -1,4 +1,4 @@
-# 📝 Express Blog Backend
+# 📝 Backend Blog Project
 
 A complete backend REST API for a blog system built with **Node.js**, **Express.js**, and **MongoDB** using proper folder structure and JWT authentication.
 
