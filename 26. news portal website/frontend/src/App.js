@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import useStore from "./store/store";
-import api from "./services/api";
+import { getUserProfile } from "./services/api";
 import Home from "./pages/Home";
 import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
@@ -15,14 +15,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 function App() {
-    const { user, login, logout } = useStore();
+    const { login, logout } = useStore();
 
     useEffect(() => {
         const checkAuth = async () => {
             try {
                 const token = localStorage.getItem("token");
                 if (token) {
-                    const res = await api.get("/users/me");
+                    const res = await getUserProfile();
                     login(res.data, token);
                 }
             } catch (err) {

@@ -5,7 +5,7 @@ import useStore from "../store/store";
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const { user, isAuthenticated, logout } = useStore();
+    const { isAuthenticated, logout } = useStore();
 
     const handleLogout = () => {
         logout();
