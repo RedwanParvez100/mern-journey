@@ -5,8 +5,8 @@ A full-stack **News Portal Website** built with **React.js**, **Tailwind CSS**, 
 
 ## 🔗 Live Links
 
-- 📰 Frontend: [https://e-commerce-frontend.vercel.app](https://news-portal-frontend-rho.vercel.app/)
-- ⚙️ Backend API: [https://e-commerce-backend.vercel.app](https://news-portal-backend-khaki.vercel.app/)
+- 📰 Frontend: [https://news-portal-frontend.vercel.app](https://news-portal-frontend-rho.vercel.app/)
+- ⚙️ Backend API: [https://news-portal-backend.vercel.app](https://news-portal-backend-khaki.vercel.app/)
 
 ## 📦 Technology Stack
 
