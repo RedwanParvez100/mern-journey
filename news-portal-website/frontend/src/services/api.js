@@ -1,11 +1,12 @@
 // src/services/api.js
 import axios from "axios";
 
-const API_URL = "https://news-portal-backend-khaki.vercel.app/api";
+const API_URL = "http://localhost:5000/api";
 
 // Create Axios instance
 const api = axios.create({
     baseURL: API_URL,
+    timeout: 10000,
 });
 
 // Add auth token to every request if available
